@@ -15,9 +15,9 @@ if(!dir.exists("output")) dir.create("output")
 
 # 1. Dummy outbreak dataset
 epi_data <- data.frame(
-  country = c("Vietnam", "Thailand", "Malaysia", "Singapore", "Philippines", "Indonesia"),
-  cases = sample(500:5000, 6),
-  deaths = sample(10:300, 6)
+  country = c("Vietnam", "Thailand", "Malaysia", "Singapore", "Philippines", "Indonesia","Laos","Cambodia"),
+  cases = sample(500:5000, 8),
+  deaths = sample(10:300, 8)
 ) %>%
   mutate(cfr = round((deaths / cases) * 100, 2))
 
